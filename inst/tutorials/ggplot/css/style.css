@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Source+Sans+Pro&family=Roboto+Mono&display=swap');
 
 body {
   background-color: #ffffff;
@@ -21,7 +21,7 @@ em {
     background-size: 2px 80px;
     background-position: left 100%;
         background-position-y: 100%;
-    border-bottom: 1px solid teal;
+    border-bottom: 1px solid darkblue;
     -webkit-transition-property: background-position;
     transition-property: background-position;
     -webkit-transition-duration: 0.25s;
@@ -30,7 +30,7 @@ em {
 
 .topicsList .topic.current {
     font-family: 'Roboto Slab', serif;
-    background-color: lightblue;
+    background-color: darkskyblue;
     color: #000000`;
     border: 0px;
 }
@@ -49,29 +49,29 @@ code {
 
 a {
     font-family: 'Source Sans Pro', sans-serif;
-    color: teal;
+    color: darkblue;
     text-decoration: none;
 }
 
 .btn-primary, .btn-success, .btn-info {
-    color: #ffffff;
-    background-color: orange;
+    color: #000000;
+    background-color: darkskyblue;
     background-image: none;
     border: none;
     font-family: 'Roboto Slab', serif;
 }
 
 h2 {
-  color: teal;
+  color: darkblue;
   font-family: 'Roboto Slab', serif;
 }
 
 h3 {
-  color: teal;
+  color: darkblue;
   font-family: 'Roboto Slab', serif;
 }
 
 h4 {
-  color: teal;
+  color: darkblue;
   font-family: 'Roboto Slab', serif;
 }
