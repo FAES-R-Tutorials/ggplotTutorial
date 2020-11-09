@@ -7,7 +7,7 @@ Authors@R:
            role = c("aut", "cre"),
            email = "adasgupta@araastat.com")
 Description: This provides a `learnr`-based tutorial on
-    some aspects of ggplot2
+    some aspects of ggplot2.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
