@@ -1,4 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Source+Sans+Pro&display=swap');
+
+body {
+  background-color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 12;
+}
+
+em {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: slategrey;
+}
+
+.topicsList .topic {
+    font-family: 'Roboto Slab', serif;
+    line-height: 30px;
+    font-size: 12px;
+    padding-left: 10px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: 2px 80px;
+    background-position: left 100%;
+        background-position-y: 100%;
+    border-bottom: 1px solid teal;
+    -webkit-transition-property: background-position;
+    transition-property: background-position;
+    -webkit-transition-duration: 0.25s;
+    transition-duration: 0.25s;
+}
+
+.topicsList .topic.current {
+    font-family: 'Roboto Slab', serif;
+    background-color: lightblue;
+    color: #000000`;
+    border: 0px;
+}
+
 blockquote {
   font-size:8pt;
   background-color: wheat;
+}
+
+code {
+    font-family: 'Roboto Mono', monospace;
+    color: gray;
+    background-color: #ffecdd;
+    font-size: 12px;
+}
+
+a {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: teal;
+    text-decoration: none;
+}
+
+.btn-primary, .btn-success, .btn-info {
+    color: #ffffff;
+    background-color: orange;
+    background-image: none;
+    border: none;
+    font-family: 'Roboto Slab', serif;
+}
+
+h2 {
+  color: teal;
+  font-family: 'Roboto Slab', serif;
+}
+
+h3 {
+  color: teal;
+  font-family: 'Roboto Slab', serif;
+}
+
+h4 {
+  color: teal;
+  font-family: 'Roboto Slab', serif;
 }

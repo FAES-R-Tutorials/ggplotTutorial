@@ -2,3 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
+
+inst/tutorials/ggplot/*.html
+inst/tutorials/ggplot/ggplot_files/*
+
