@@ -19,3 +19,5 @@ Imports:
     readr,
     mlbench,
     patchwork
+URL: https://github.com/FAES-R-Tutorials/ggplotTutorial
+BugReports: https://github.com/FAES-R-Tutorials/ggplotTutorial/issues
