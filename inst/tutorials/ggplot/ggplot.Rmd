@@ -2,6 +2,7 @@
 title: "Exploring ggplot2"
 output: 
   learnr::tutorial:
+    css: css/style.css
     progressive: true
     allow_skip: true
 runtime: shiny_prerendered
@@ -10,20 +11,20 @@ description: >
 ---
 
 ```{r setup, include=FALSE}
-library(learnr)
-library(readr)
-library(ggplot2)
-library(mlbench)
-library(patchwork)
+pacman::p_load(char = c('learnr','readr','ggplot2',
+                        'mlbench','patchwork'))
 data("PimaIndiansDiabetes2")
 knitr::opts_chunk$set(echo = FALSE, warning=F, message=F, error=T)
-beaches <- read_csv(system.file('extdata','beaches.csv', package='BIOF439Tutorials'))
+beaches <- read_csv(system.file('extdata','beaches.csv', package='ggplotTutorial'))
 ```
 
 ## Loading a data package
 
-You had installed and loaded the **mlbench** package into R as part of Formative 1 of 
-week 2. Load that package into your current R session.
+The package **mlbench** includes several datasets from the UCI Machine Learning Repository. We will be using the Pima Indians Diabetes dataset in this tutorial. 
+
+> This dataset is originally from the National Institute of Diabetes and Digestive and Kidney Diseases. The objective of the dataset is to diagnostically predict whether or not a patient has diabetes, based on certain diagnostic measurements included in the dataset.
+
+Load the **mlbench**  package into your current R session.
 
 ```{r}
 pacman::p_load(mlbench)
@@ -46,7 +47,7 @@ head(___)
 
 ## Univariate exploration (discrete variable)
 
-Let's first look at the distribution of the number of pregancies in this dataset
+Let's first look at the distribution of the number of pregnancies in this dataset
 
 ```{r}
 ggplot(PimaIndiansDiabetes2, aes(x = pregnant)) + 
